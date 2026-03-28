@@ -1,74 +1,73 @@
-package tallerListas.listas;
 
 
 /**
  * Clase nodo aplicando Generics
- * 
- * 
- * 
+ *
+ *
+ *
  * **/
 
 
 public class NodoDoble<T> {
 
-	private NodoDoble<T> siguienteNodo;
-	private NodoDoble<T> anteriorNodo;
-	private T valorNodo;
-	
-	
-	/**
-	 * Constructor de la clase Nodo
-	 * @param dato Elemento que se guarda en el Nodo
-	 */
-	public NodoDoble(T valorNodo) {
-		this.valorNodo = valorNodo;
-	}
-	
-	
-	/**
-	 * Constructor de la clase Nodo
-	 * @param dato Elemento que se guarda en el Nodo
-	 * @param siguiente Enlace al siguiente Nodo
-	 */
-	public NodoDoble(T dato, NodoDoble<T> siguiente,NodoDoble<T> anterior) {
-		super();
-		this.valorNodo = dato;
-		this.siguienteNodo = siguiente;
-		this.anteriorNodo = anterior;
-	}
-	
-
-	//Metodos get y set de la clase Nodo
-	
-	public NodoDoble<T> getSiguienteNodo() {
-		return siguienteNodo;
-	}
+    private NodoDoble<T> siguienteNodo;
+    private NodoDoble<T> anteriorNodo;
+    private T valorNodo;
 
 
-	public void setSiguienteNodo(NodoDoble<T> siguienteNodo) {
-		this.siguienteNodo = siguienteNodo;
-	}
+    /**
+     * Constructor de la clase Nodo
+     * @param dato Elemento que se guarda en el Nodo
+     */
+    public NodoDoble(T valorNodo) {
+        this.valorNodo = valorNodo;
+    }
 
 
-	public T getValorNodo() {
-		return valorNodo;
-	}
+    /**
+     * Constructor de la clase Nodo
+     * @param dato Elemento que se guarda en el Nodo
+     * @param siguiente Enlace al siguiente Nodo
+     */
+    public NodoDoble(T dato, NodoDoble<T> siguiente,NodoDoble<T> anterior) {
+        super();
+        this.valorNodo = dato;
+        this.siguienteNodo = siguiente;
+        this.anteriorNodo = anterior;
+    }
 
 
-	public void setValorNodo(T valorNodo) {
-		this.valorNodo = valorNodo;
-	}
+    //Metodos get y set de la clase Nodo
+
+    public NodoDoble<T> getSiguienteNodo() {
+        return siguienteNodo;
+    }
 
 
-	public NodoDoble<T> getAnteriorNodo() {
-		return anteriorNodo;
-	}
+    public void setSiguienteNodo(NodoDoble<T> siguienteNodo) {
+        this.siguienteNodo = siguienteNodo;
+    }
 
 
-	public void setAnteriorNodo(NodoDoble<T> anteriorNodo) {
-		this.anteriorNodo = anteriorNodo;
-	}
-	
-	
-	
+    public T getValorNodo() {
+        return valorNodo;
+    }
+
+
+    public void setValorNodo(T valorNodo) {
+        this.valorNodo = valorNodo;
+    }
+
+
+    public NodoDoble<T> getAnteriorNodo() {
+        return anteriorNodo;
+    }
+
+
+    public void setAnteriorNodo(NodoDoble<T> anteriorNodo) {
+        this.anteriorNodo = anteriorNodo;
+    }
+
+
+
 }
